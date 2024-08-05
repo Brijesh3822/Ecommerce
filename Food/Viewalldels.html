@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>View All Deals</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="model" id="model">
+    <div class="modeldiv1">
+      <h2>START YOUR ORDER</h2>
+      <button class="closebuttonmodeldiv1" id="closebuttonmodeldiv1" onclick="closeorder()"><i class="fa fa-close" style="font-size:36px"></i></button>
+    </div>
+    <hr />
+    <div class="modeldiv2">
+      <div class="sub1modeldiv2">
+        <h1>How WOULD YOU LIKE TO RECEIVE YOUR ORDER</h1>
+      </div>
+      <div class="sub2modeldiv2">
+        <button class="buutonsub2modeldiv2">pick up</button>
+        <button  class="buutonsub2modeldiv2"> Dine In</button>
+        <button class="buutonsub2modeldiv2"> Delivery</button>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="modeldiv3"></div> -->
+
+  <header>
+    <div class="headerdiv1">
+      <div class="headerdiv2">
+       <a href="index.html" target="_self"><img class="imageheaderdiv2"   src="https://online.kfc.co.in/static/media/kfcLogo.492728c6.svg" /></a> 
+        <a class="text1headerdiv" href="/ Menu.html" target="_self">Menu</a>
+
+      </div>
+          <div class="headerdiv3">
+          <i class="fa fa-user" style="font-size: 24px"></i
+          ><a href="creataccount.html" target="_self" class="text1headerdiv3"
+            >SignIn
+          </a>
+        </div>
+      <div class="headerdiv4">
+        <span id="sumoftotal"></span>
+        <a href="addtocart.html" target="_self"><img class="imageheaderdiv4" src="https://upload.wikimedia.org/wikipedia/en/5/57/KFC_logo-image.svg" /></a>
+      </div>
+    </div>
+
+    <br />
+    <div class="headerdiv5">
+      <span class="textheaderdiv5">LETS'S ORDER FOR DELIVERY,PICK UP,OR DINE-IN</span>
+      <button class="buttonheaderdiv5" id="buttonheaderdiv5" onclick="openorder()">START ORDER</button>
+
+    </div>
+
+    <div class="dealsheaderdiv6">
+    
+        <div class="textheaderdiv6"><h1 class="dealstextheaderdiv6">Deal & Offers</h1></div>
+    </div>
+    <div></div>
+    <div class="headerdiv7">
+      <div class="dealsheaderdiv8">
+        <div class="dealssubheaderdiv8"></div>
+        <div class="dealssubheaderdiv8"></div>
+        <div class="dealssubheaderdiv8"></div>
+      </div>
+      <div class="headerdiv9">
+        <span class="dealstextheaderdiv9">OFFERS FOE YOU</span>
+      </div>
+      
+    </div>
+  </header>
+  
+
+    <div class="deals">
+      <div class="loginofferfooterdiv4">
+        <div class="textloginofferfooterdiv4">
+        <h2>SIGN IN TO SEE <br/>MORE EXCLUSIVE <br/>OFFERS & DEALS</h2>
+       <a href="creataccount.html" target="_self"> <button class="buttonloginofferfooterdiv4">Log In</button></a>
+        </div>
+     
+      </div>
+
+      <div class="footerdiv4">
+        <img class="imagefooterdiv4"
+          src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/offers/lg/BIGSAVE.jpg" />
+        <div class="subdealsdiv4">
+          <span class="text1subfooterdiv4">UPTO RS 100 OFF O...</span>
+          <div class="footerdiv5">
+            <span class="text1footerdiv5">Upto Rs.100/- OFF<br />
+              Minimum Order Value Rs.699/-
+            </span>
+            <div class="subfooterdiv5">
+              <button class="viewdetails">View Details</button>
+              <button class="button2subfooterdiv5">Redeem</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footerdiv4">
+        <img class="imagefooterdiv4"
+          src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/offers/lg/CHKZINGER.jpg" />
+        <div class="subdealsdiv4">
+          <span class="text1subfooterdiv4">1PC FREE ZINGER...</span>
+          <div class="footerdiv5">
+            <span class="text1footerdiv5">Offer Valid Only On Your 1 st Order <br />
+              min cart value of Rs 209 or more</span>
+            <div class="subfooterdiv5">
+              <button class="viewdetails">View Details</button>
+              <button class="button2subfooterdiv5">Redeem</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footerdiv4">
+        <img class="imagefooterdiv4"
+          src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/offers/lg/VEGZINGER.jpg" />
+        <div class="subdealsdiv4">
+          <span class="text1subfooterdiv4">1PC FREE BURGER...</span>
+          <div class="footerdiv5">
+            <span class="text1footerdiv5">Minimum Order Value <br />
+              Rs.599/- Or More
+            </span>
+            <div class="subfooterdiv5">
+              <button class="viewdetails">View Details</button>
+              <button class="button2subfooterdiv5">Redeem</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="deals">
+      <div class="footerdiv4">
+        <img class="imagefooterdiv4"
+          src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-404087.jpg?ver=9.76" />
+        <div class="subdealsdiv4">
+          <span class="text1subfooterdiv4">1PC FREE ...</span>
+          <div class="footerdiv5">
+            <span class="text1footerdiv5">Add 3 Pc Hot n Crispy chicken @ just <br />
+              Rs 99 on min cart value of Rs 699 or more</span>
+            <div class="subfooterdiv5">
+              <button class="viewdetails">View Details</button>
+              <button class="button2subfooterdiv5">Redeem</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footerdiv4">
+        <img class="imagefooterdiv4"
+          src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-200015.jpg?ver=9.76" />
+        <div class="subdealsdiv4">
+          <span class="text1subfooterdiv4"> Soft Drink 300ml...</span>
+          <div class="footerdiv5">
+            <span class="text1footerdiv5">FREE Soft Drink 300ml<br />
+              Minimum Order Value Rs.499/-
+            </span>
+            <div class="subfooterdiv5">
+              <button class="viewdetails">View Details</button>
+              <button class="button2subfooterdiv5">Redeem</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footerdiv4">
+        <img class="imagefooterdiv4"
+          src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-160067.jpg?ver=9.76" />
+        <div class="subdealsdiv4">
+          <span class="text1subfooterdiv4">1PC FREE Ice Cream...</span>
+          <div class="footerdiv5">
+            <span class="text1footerdiv5">Offer Valid Only On Your 1 st Order <br />
+              min cart value of Rs 160 or more</span>
+            <div class="subfooterdiv5">
+              <button class="viewdetails">View Details</button>
+              <button class="button2subfooterdiv5">Redeem</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footerdiv4">
+        <img class="imagefooterdiv4"
+          src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-200015.jpg?ver=9.76" />
+        <div class="subdealsdiv4">
+          <span class="text1subfooterdiv4"> FREE Soft Drink 500ml...</span>
+          <div class="footerdiv5">
+            <span class="text1footerdiv5">Minimum Order Value <br />
+              Rs.599/- Or More
+            </span>
+            <div class="subfooterdiv5">
+              <button class="viewdetails">View Details</button>
+              <button class="button2subfooterdiv5">Redeem</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="footer">
+    <div class="footerdiv1">
+  
+ 
+      <div class="footerdiv6">
+        <div class="footerdiv7">
+          <img class="imagefooterdiv7" src="https://upload.wikimedia.org/wikipedia/en/5/57/KFC_logo-image.svg" />
+        </div>
+        <div class="footerdiv8">
+          <ul class="listfooterdiv8">
+            <li>KFC Food</li>
+            <li>Menu</li>
+            <li>Order Lookup</li>
+            <li>Gift Card</li>
+          </ul>
+        </div>
+
+        <div class="footerdiv8">
+          <ul class="listfooterdiv8">
+            <li>Supports</li>
+            <li>Get Help</li>
+            <li>Contact Us</li>
+            <li>KFC Feedback</li>
+          </ul>
+        </div>
+
+        <div class="footerdiv8">
+          <ul class="listfooterdiv8">
+            <li>Legal</li>
+            <li>Terms ans Conditions</li>
+            <li>Privacy Policy</li>
+            <li>Disclaimers</li>
+            <li>Caution Notice</li>
+          </ul>
+        </div>
+
+        <div class="footerdiv8">
+          <ul class="listfooterdiv8">
+            <li>KFC India</li>
+            <li>About KFC</li>
+            <li>KFC Care</li>
+            <li>Careers</li>
+            <li>Our Golden Past</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="index.js"></script>
+  
+</body>
+
+</html>
