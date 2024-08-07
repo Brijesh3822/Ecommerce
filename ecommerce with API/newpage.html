@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>newpage</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="newpagebody">
+      <div class="newpageinput">
+        <div>
+          <h2>Input Page Details</h2>
+        </div>
+        <div class="newpageinputdetelis">
+          <label> Id :</label> <input type="text " id="id" />
+        </div>
+        <div class="newpageinputdetelis">
+          <label>Title :</label> <input type="text" id="title" />
+        </div>
+        <div class="newpageinputdetelis">
+          <label>price :</label> <input type="text" id="price" />
+        </div>
+        <div class="newpageinputdetelis">
+          <label> description :</label> <input type="text" id="description" />
+        </div>
+        <div class="newpageinputdetelis">
+          <label> category :</label> <input type="text" id="category" />
+        </div>
+        <div class="newpageinputdetelis">
+          <label> image URL :</label><input type="text" id="image" />
+        </div>
+        <div class="newpageinputdetelis">
+          <label> rating rate :</label><input type="text" id="ratingrate" />
+        </div>
+        <div class="newpageinputdetelis">
+          <label> rating count : </label><input type="text" id="ratingcount" />
+        </div>
+        <div class="newpageinputbutton">
+          <button id="inputbutton">Submit</button>
+          <button id="updatebutton">Home</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      const inputbutton = document.getElementById("inputbutton");
+      inputbutton.addEventListener("click", () => {
+        postData(inputdata);
+      });
+
+      const updatebutton = document.getElementById("updatebutton");
+      updatebutton.addEventListener("click", () => {
+        window.location.href = "index.html";
+      });
+
+      function postData(inputdata) {
+        fetch("https://cornet-1.onrender.com/products", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(inputdata),
+        })
+          .then((response) => response.json())
+          .then((data) => console.log(data))
+          .catch((err) => console.log(err));
+      }
+
+      function upDate(inputdata) {
+        fetch("https://cornet-1.onrender.com/products", {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(inputdata),
+        })
+          .then((response) => response.json())
+          .then((data) => console.log(data))
+          .catch((err) => console.log(err));
+      }
+
+      const inputdata = {
+        id: "",
+        title: "",
+        price: "",
+        description: "",
+        category: "",
+        image: "",
+        rating: {
+          rate: "",
+          count: "",
+        },
+      };
+      const inputid = document.getElementById("id");
+      inputid.addEventListener("change", (e) => {
+        inputdata.id = e.target.value;
+      });
+
+      const inputtitle = document.getElementById("title");
+      inputtitle.addEventListener("change", (e) => {
+        inputdata.title = e.target.value;
+      });
+      const inputprice = document.getElementById("price");
+      inputprice.addEventListener("change", (e) => {
+        inputdata.price = e.target.value;
+      });
+      const inputdescription = document.getElementById("description");
+      inputdescription.addEventListener("change", (e) => {
+        inputdata.description = e.target.value;
+      });
+      const inputcategory = document.getElementById("category");
+      inputcategory.addEventListener("change", (e) => {
+        inputdata.category = e.target.value;
+      });
+
+      const inputimage = document.getElementById("image");
+      inputimage.addEventListener("change", (e) => {
+        inputdata.image = e.target.value;
+      });
+      const inputratingrate = document.getElementById("ratingrate");
+      inputratingrate.addEventListener("change", (e) => {
+        inputdata.rating.rate = e.target.value;
+      });
+      const inputratingcount = document.getElementById("ratingcount");
+      inputratingcount.addEventListener("change", (e) => {
+        inputdata.rating.count = e.target.value;
+      });
+
+      //   const input = document.querySelectorAll("input");
+      //   function savedata() {
+      //     const inputdata = {};
+      //     input.forEach(function (input) {
+      //       inputdata.key = input.name;
+      //       inputdata.value = input.value;
+      //       inputdata.push(inputdata);
+      //     });
+      //   }
+      //   console.log(savedata);
+    </script>
+  </body>
+</html>

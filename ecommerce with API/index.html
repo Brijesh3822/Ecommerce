@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;
+            1,200..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ecommerce</title>
+  </head>
+  <body>
+    <div class="col-12">
+      <div class="main">
+        <div class="headerdivmain" id="headerdivmain">
+          <div class="col-3">
+            <img
+              class="image_haeder"
+              src="https://themewagon.github.io/electro/img/logo.png"
+            />
+          </div>
+             <div  class="navbartopmenu" onclick="navbarToggle()">
+            <div class="navbarmenu"></div>
+            <div class="navbarmenu"></div>
+            <div class="navbarmenu"></div>
+         </div>
+          <div class="headdiv" id="headdiv">
+          <div class="headerleft">
+            <a class="linktopage" href="signin.html"  >
+            <i class="fa fa-user" style="font-size: 24px; color: red"></i>
+            <span class="signin" id="signupname"> sign in</span>
+            </a>
+          </div>
+          <div class="headerleft">
+            <a class="linktopage" href="addtocart.html"><i
+              class="fa fa-shopping-cart"
+              style="font-size: 24px; color: red;margin-left: -4px;"
+            ></i>
+             <span class="signin">Add to cart</span></a>
+          </div>
+          <div class="headerleft">
+            <button class="signoutbutton" id="signout">
+            <i class="fa fa-sign-out" style="font-size:24px ; color: red; margin-left: -6px;"></i>
+            <span class="signin">Sign Out</span>
+            </button>
+          </div>
+          <div class="newpage"> 
+            <a href="newpage.html"><span>New page</span></a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="topnavigation">
+      <div class="navigation">
+        <div class="bottomnavigation">
+          <ul>
+            <a class="bottomnavigationlinkhomepage" href="index.html"><li>Home</li></a>
+            <button onclick="newdata('topdeals')" class="bottomnavigationbutton">Top Deals</button>
+            <button onclick="newdata('phone')" class="bottomnavigationbutton">Phone</button>
+            <button onclick="newdata('laptops')" class="bottomnavigationbutton">Laptops</button>
+            <button onclick="newdata('Accessories')" class="bottomnavigationbutton">Accessories</button>
+          </ul>
+        </div>
+    
+      </div>
+    </div>
+
+    <!-- <div class="bodyproducts">
+      <div class="newproducts">
+        <div class="Products">
+          <h2>All Products</h2>
+        </div>
+        <div class="Productslastshow">
+          <ul>
+            <li>Phone</li>
+            <li>Laptops</li>
+            <li>Accessories</li>
+          </ul>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="topdataproducts">
+      <!-- <div class="dataproducts">
+        <div class="deals1">
+          <img
+            class="imagedeals1"
+            src="https://themewagon.github.io/electro/img/product01.png"
+          />
+          <div class="deals1detlis">
+            <span class="text1deals">Dell Latitude 7479</span>
+            <div>
+              <span>Price:₹69,000/-</span>
+              <span class="text2price">89,000/-</span>
+            </div>
+            <span>8/10(26 Reviews)</span>
+            <span class="text2deals">10% extra discount in icici card</span>
+            <div>
+              <span class="deals1viewdetails"> View details </span>
+              <button class="buttondeals1text">Add to cart</button>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="midalbody">
+        <div class="minofferbody">
+          <div class="offerbody">
+            <ul class="offerbodyul">
+              <li>
+                <div class="offerbodydetails">
+                  <h3>03</h3>
+                  <span class="offerbodydetailstext">Days</span>
+                </div>
+              </li>
+              <li>
+                <div class="offerbodydetails">
+                  <h3>20</h3>
+                  <span class="offerbodydetailstext">Hours</span>
+                </div>
+              </li>
+              <li>
+                <div class="offerbodydetails">
+                  <h3>34</h3>
+                  <span class="offerbodydetailstext">Mins</span>
+                </div>
+              </li>
+              <li>
+                <div class="offerbodydetails">
+                  <h3>54</h3>
+                  <span class="offerbodydetailstext">Secs</span>
+                </div>
+              </li>
+            </ul>
+            <h2 class="offerbodytext1">Hot Deal This Week</h2>
+            <p class="offerbodytext2">New Collection Up to 50% OFF</p>
+           <a href="index.html" target="_self"> <button class="offerbodybutton">Shop Now</button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bodyproducts">
+        <div class="newproducts">
+          <div class="Products">
+            <h2> Products</h2>
+          </div>
+          <div class="Productslastshow">
+            <ul>
+              <button onclick="newdata('phone')" class="Productslastshowbutton" >Phone</button>
+              <button onclick="newdata('laptops')" class="Productslastshowbutton" >Laptops</button>
+              <button onclick="newdata('Accessories')" class="Productslastshowbutton" >Accessories</button>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div>
+      <div class="dataproducts" id="dataproducts">
+        <!-- <div class="deals1">
+          <img
+            class="imagedeals1"
+            src="https://themewagon.github.io/electro/img/product01.png"
+          />
+          <div class="deals1detlis">
+            <span class="text1deals">Dell Latitude 7479</span>
+            <div class="deals1subdetlis1">
+              <span>Price:₹69,000/-</span>
+              <span class="text2price">89,000/-</span>
+            </div>
+            <span>8/10(26 Reviews)</span>
+            <span class="text2deals">10% extra discount in icici card</span>
+            <div class="deals1subdetlis2">
+              <span class="deals1viewdetails"> View details </span>
+              <button class="buttondeals1text">Add to cart</button>
+            </div>
+          </div>
+        </div> -->
+      </div>
+      </div>
+
+      <div class="footer">
+        <div class="footerdiv">
+          <div class="footerdetils">
+            <h2>About Us</h2>
+            <p class="footerdetilstext1">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut.
+            </p>
+            <div class="footerdetilstext">
+              <i class="fa fa-map-marker" style="color: red"></i>
+              <li class="footerdetilstextsub">1734 Stonecoal Road</li>
+            </div>
+            <div class="footerdetilstext">
+              <i class="fa fa-phone" style="color: red"></i>
+              <li class="footerdetilstextsub">+021-95-51-84</li>
+            </div>
+            <div class="footerdetilstext">
+              <i class="fa fa-envelope" style="color: red"></i>
+              <li class="footerdetilstextsub">email@email.com</li>
+            </div>
+          </div>
+
+          <div class="footerdetils">
+            <h2>Categories</h2>
+            <div class="footerdetilsli">
+              <li>Hot deals</li>
+              <li>new products</li>
+              <li>Laptops</li>
+              <li>Smartphones</li>
+              <li>Accessories</li>
+              </div>
+            </ul>
+          </div>
+
+          <div class="footerdetils">
+            <h2>Information</h2>
+            <div class="footerdetilsli">
+              <li>About Us</li>
+              <li>Contact Us</li>
+              <li>Privacy Policy</li>
+              <li>Orders and Returns</li>
+              <li>Terms & Conditions</li>
+              </div>
+            </ul>
+          </div>
+
+          <div class="footerdetils">
+            <h2>Service</h2>
+            <div class="footerdetilsli">
+              <li>My Account</li>
+              <li>View Cart</li>
+              <li>Wishlist</li>
+              <li>Track My Order</li>
+              <li>Help</li>
+              </div>
+            </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script src="data.js"></script>
+  </body>
+</html>
